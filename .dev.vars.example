@@ -1,0 +1,11 @@
+# Preferred: scoped API token.
+# This is an app runtime token, not the Cloudflare deploy/build token.
+CF_TOKEN=your_api_token_with_zone_email_permissions
+# Optional: lets the admin dashboard trigger the GitHub update workflow.
+# GITHUB_UPDATE_TOKEN=github_pat_with_actions_write
+# GITHUB_UPDATE_REPO=owner/repo
+# GITHUB_UPDATE_REF=main
+
+# Legacy Global API Key alternative. Use this only instead of CF_TOKEN.
+# CF_EMAIL=you@example.com
+# CF_API_KEY=your_global_api_key
