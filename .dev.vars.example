@@ -1,0 +1,23 @@
+# Preferred: scoped API token.
+# This is an app runtime token, not the Cloudflare deploy/build token.
+CF_TOKEN=your_api_token_with_zone_email_permissions
+# Optional: lets the admin dashboard trigger the GitHub update workflow.
+# GITHUB_UPDATE_TOKEN=github_pat_with_actions_write
+# GITHUB_UPDATE_REPO=owner/repo
+# GITHUB_UPDATE_REF=main
+
+# Legacy Global API Key alternative. Use this only instead of CF_TOKEN.
+# CF_EMAIL=you@example.com
+# CF_API_KEY=your_global_api_key
+
+# The Worker uses the AI binding in wrangler.jsonc. Override its chat/draft model if needed.
+# AI_MODEL=@cf/moonshotai/kimi-k2.5
+
+# Optional: send and receive through Resend or Amazon SES instead of Cloudflare.
+# These can also be entered in Admin > Domains; values saved there take precedence.
+# RESEND_API_KEY=re_...
+# AWS_ACCESS_KEY_ID=AKIA...
+# AWS_SECRET_ACCESS_KEY=your_secret_access_key
+# AWS_REGION=us-east-1
+# Receiving through Resend or SES needs a public HTTPS address.
+# APP_URL=https://mail.example.com
