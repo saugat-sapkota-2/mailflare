@@ -141,6 +141,7 @@ The Node/Docker runtime still uses Next.js with `build:node`, `start:node`, and 
 
 Everyone can switch language from the homepage or sign-in page, and signed-in users can set it under **Settings → Account → General**, next to their time zone. The choice is kept in a cookie, so server-rendered pages use it too.
 
+
 To add a language, create `public/locales/<code>.json` with the same keys as `src/lib/i18n/en.json`, then register it in `src/lib/i18n/locales.ts` with its native name (add `dir: "rtl"` for right-to-left scripts). The selector, validation, and cookie handling pick it up from that registry. Missing keys fall back to English. English ships in the main bundle; other catalogs are static assets loaded on demand, outside the Worker size limit.
 
 ## Documentation
